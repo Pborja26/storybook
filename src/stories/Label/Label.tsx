@@ -1,26 +1,33 @@
-import { Text } from "./Label.style";
-import { LabelProps } from "./Label.types";
+import { StyledLabel } from "./label.styled";
+import { LabelProps } from "../types/typesIndex";
 
 const Label = ({
-    variant = "p",
-    color,
-    fontSize,
-    fontWeight,
-    style,
-    label
+  label,
+  size = 12,
+  weight = 400,
+  color,
+  style,
+  bgcolor,
+  padding,
+  radius,
+  width,
+  height
 }: LabelProps) => {
-    return (
-        <Text
-            variant={variant}
-            label={label}
-            color={color}
-            fontSize={fontSize}
-            fontWeight={fontWeight}
-            style={style}
-        >
-            {label}
-        </Text>
-    )
+  return (
+    <StyledLabel
+      size={size}
+      weight={weight}
+      color={color}
+      style={style}
+      bgcolor={bgcolor}
+      padding={padding}
+      radius={radius}
+      width={width}
+      height={height}
+    >
+      {label}
+    </StyledLabel>
+  )
 };
 
 export default Label;

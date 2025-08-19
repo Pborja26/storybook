@@ -1,41 +1,47 @@
-import { ContainerComponent } from "./Container.style";
-import { ContainerProps } from "./Conteinar.types";
+import { StyledContainer } from "./container.styled";
+import { ContainerProps } from "../types/typesIndex";
 
 const Container = ({
-    height,
-    width = "100%",
-    maxHeight,
-    maxWidth,
-    padding,
-    radius,
-    direction,
-    overflowX,
-    overflowY,
-    alignItems =  "center",
-    justifyContent = "center",
-    border = "1px solid #0000",
-    children,
-    gap
+  display,
+  direction,
+  children,
+  height,
+  width,
+  padding,
+  radius,
+  maxheight,
+  maxwidth,
+  bgcolor,
+  border,
+  style,
+  overflowX,
+  overflowY,
+  gap,
+  align,
+  justify
 }: ContainerProps) => {
-    return (
-        <ContainerComponent
-            height={height}
-            width={width}
-            maxHeight={maxHeight}
-            maxWidth={maxWidth}
-            padding={padding}
-            radius={radius}
-            direction={direction}
-            overflowX={overflowX}
-            overflowY={overflowY}
-            alignItems={alignItems}
-            justifyContent={justifyContent}
-            border={border}
-            gap={gap}
-        >
-            {children}
-        </ContainerComponent>
-    )
+  return (
+    <StyledContainer
+      display={display}
+      direction={direction}
+      height={height}
+      width={width}
+      padding={padding}
+      radius={radius}
+      maxheight={maxheight}
+      maxwidth={maxwidth}
+      bgcolor={bgcolor}
+      border={border}
+      style={style}
+      overflowX={overflowX}
+      overflowY={overflowY}
+      gap={gap}
+      align={align}
+      justify={justify}
+    >
+      {children}
+    </StyledContainer>
+  )
 };
 
 export default Container;

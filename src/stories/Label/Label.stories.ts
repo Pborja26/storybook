@@ -1,29 +1,30 @@
-import type { Meta, StoryObj } from '@storybook/react'
-
-import Label from './Label'
+import type { Meta, StoryObj } from "@storybook/react";
+import Label from "./label";
 
 const meta = {
-    title: 'Example/Label',
-    component: Label,
-    parameters: {
-        layout: 'centered',
-    },
-    tags: ['autodocs'],
-    argTypes: {
-        fontWeight: {
-            control: {
-                type: "select"
-            },
-            options: ["normal", "bold", "bolder", "lighter", 100, 200, 300, 400, 500, 600, 700, 800, 900]
-        },
-    }
+  title: "Example/Label",
+  component: Label,
+  parameters: {
+    layout: "centered",
+    args: { width: "100%" }
+  },
+  tags: ["autodocs"],
 } satisfies Meta<typeof Label>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {
-        label: ""
-    }
+  args: {
+    label: "Default Label",
+    size: 12,
+    weight: 400,
+    color: "#000",
+    bgcolor: "transparent",
+    padding: "",
+    radius: "",
+    width: "fit-content",
+    height: "fit-content",
+    style: {}
+  }
 }
