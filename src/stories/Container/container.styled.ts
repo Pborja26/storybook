@@ -17,4 +17,5 @@ export const StyledContainer = styled.div<ContainerProps>`
   gap: ${(props) => props.gap || "1px"};
   align-items: ${(props) => props.align || "stretch"};
   justify-content: ${(props) => props.justify || "center"};
+  position: relative;
 `;

@@ -7,5 +7,4 @@ export const StyledSelectInput = styled.input`
 
 export const StyledSelectItem = styled.div`
   width: 100%;
-
 `;

@@ -11,4 +11,5 @@ export const StyledLabel = styled.p<LabelStyleProps>`
   border-radius: ${(props) => props.radius};
   width: ${(props) => props.width || "fit-content"};
   height: ${(props) => props.height || "fit-contet"};
+  margin: 0;
 `
