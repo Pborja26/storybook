@@ -21,6 +21,7 @@ export const Default: Story = {
     setValue: (e) => {},
     width: "100%",
     disabled: false,
-    required: false
+    required: false,
+    label: "Select Label"
   }
 }
