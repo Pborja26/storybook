@@ -7,8 +7,9 @@ export const StyledButton = styled.button<ButtonProps>`
   height: ${(props) => props.height || "fit-content"};
   padding: ${(props) => props.padding};
   border-radius: ${(props) => props.radius || "4px"};
-  border: 2px solid ${(props) => props.disabled ? Theme.feedback.disabled : props.color};
-  background-color: ${(props) => props.disabled ? Theme.feedback.disabled : props.color || "transparent"};
+  color: ${(props) => props.color || "#000"};
+  border: 2px solid ${(props) => props.disabled ? Theme.feedback.disabled : props.bgColor};
+  background-color: ${(props) => props.disabled ? Theme.feedback.disabled : props.bgColor || "transparent"};
   cursor: ${(props) => props.disabled ? "not-allowed" : props.loading ? "progress" : "pointer"};
 
   &:hover {

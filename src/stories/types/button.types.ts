@@ -6,6 +6,7 @@ export interface ButtonProps {
   padding?: string;
   radius?: string;
   color?: string;
+  bgColor?: string;
   hoverColor?: string;
   disabled?: boolean;
   loading?: boolean;

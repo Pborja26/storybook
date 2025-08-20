@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import Button from "./button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -24,6 +24,7 @@ export const Primary: Story = {
     radius: "8px",
     color: "",
     hoverColor: "",
+    bgColor: "",
     disabled: false,
     loading: false,
     onClick: () => {},
@@ -39,6 +40,7 @@ export const Secondary: Story = {
     radius: "8px",
     color: "",
     hoverColor: "",
+    bgColor: "",
     disabled: false,
     loading: false,
     onClick: () => {},
@@ -52,7 +54,8 @@ export const Close: Story = {
     height: "",
     padding: "6px 8px",
     radius: "50%",
-    color: "#fff",
+    color: "#000",
+    bgColor: "#fff",
     hoverColor: "#cbcbcb",
     disabled: false,
     loading: false,
@@ -69,13 +72,14 @@ export const Delete: Story = {
     height: "",
     padding: "8px",
     radius: "50%",
-    color: "#d31313",
+    color: "#fff",
+    bgColor: "#d31313",
     hoverColor: "#ff0000",
     disabled: false,
     loading: false,
     onClick: () => {},
     children: (
-      <FontAwesomeIcon icon={faTrash} color="#fff" />
+      <FontAwesomeIcon icon={faTrash} />
     )
   }
 }

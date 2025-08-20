@@ -13,7 +13,8 @@ const Button = ({
   children,
   disabled,
   loading,
-  radius
+  radius,
+  bgColor
 }: ButtonProps) => {
   function handleClick() {
     if (!disabled && !loading) {
@@ -32,6 +33,7 @@ const Button = ({
       disabled={disabled}
       radius={radius}
       loading={loading}
+      bgColor={bgColor}
     >
       {loading ? (
         <FontAwesomeIcon icon={faSpinner} spin height={"100%"} width={"100%"} />
