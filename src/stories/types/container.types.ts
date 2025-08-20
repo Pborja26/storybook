@@ -9,6 +9,7 @@ export interface ContainerProps {
   overflowX?: types.OverflowValues;
   overflowY?: types.OverflowValues;
   style?: React.CSSProperties;
+  onClick?: () => void;
   height?: string;
   width?: string;
   padding?: string;

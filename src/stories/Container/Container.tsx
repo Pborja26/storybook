@@ -18,7 +18,8 @@ const Container = ({
   overflowY,
   gap,
   align,
-  justify
+  justify,
+  onClick
 }: ContainerProps) => {
   return (
     <StyledContainer
@@ -38,6 +39,7 @@ const Container = ({
       gap={gap}
       align={align}
       justify={justify}
+      onClick={onClick}
     >
       {children}
     </StyledContainer>
