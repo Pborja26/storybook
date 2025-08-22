@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import Button from "./button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faTrash } from "@fortawesome/free-solid-svg-icons";
+import Button from "./button";
 
 const meta = {
   title: "Example/Button",
@@ -83,5 +83,3 @@ export const Delete: Story = {
     )
   }
 }
-
-

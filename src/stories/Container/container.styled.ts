@@ -14,8 +14,9 @@ export const StyledContainer = styled.div<ContainerProps>`
   background-color: ${(props) => props.bgcolor || "transparent"};
   overflow-x: ${(props) => props.overflowX || "auto"};
   overflow-y: ${(props) => props.overflowY || "auto"};
-  gap: ${(props) => props.gap || "1px"};
+  gap: ${(props) => props.gap || "0"};
   align-items: ${(props) => props.align || "stretch"};
   justify-content: ${(props) => props.justify || "center"};
+  cursor: ${(props) => props.cursor || "default"};
   position: relative;
 `;

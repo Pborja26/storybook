@@ -10,7 +10,7 @@ export const StyledButton = styled.button<ButtonProps>`
   color: ${(props) => props.color || "#000"};
   border: 2px solid ${(props) => props.disabled ? Theme.feedback.disabled : props.bgColor};
   background-color: ${(props) => props.disabled ? Theme.feedback.disabled : props.bgColor || "transparent"};
-  cursor: ${(props) => props.disabled ? "not-allowed" : props.loading ? "progress" : "pointer"};
+  cursor: ${(props) => props.disabled ? "not-allowed" : props.loading ? "wait" : "pointer"};
 
   &:hover {
     background-color: ${(props) => props.hoverColor};
@@ -18,6 +18,6 @@ export const StyledButton = styled.button<ButtonProps>`
   }
 
   &:active {
-    transform: translate(1px, 1px);
+    transform: ${(props) => props.disabled || props.loading ? "null" : "translate(1px, 1px)"};
   }
 `;

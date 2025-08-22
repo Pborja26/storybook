@@ -5,8 +5,7 @@ const meta = {
   title: "Example/Skeleton",
   component: Skeleton,
   parameters: {
-    layout: "centered",
-    args: { width: "100%" }
+    layout: "centered"
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Skeleton>;

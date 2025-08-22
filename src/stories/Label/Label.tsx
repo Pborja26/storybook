@@ -3,11 +3,11 @@ import { LabelProps } from "../types/typesIndex";
 
 const Label = ({
   label,
-  size = 12,
+  size = 20,
   weight = 400,
   color,
   style,
-  bgcolor,
+  bgColor,
   padding,
   radius,
   width,
@@ -19,7 +19,7 @@ const Label = ({
       weight={weight}
       color={color}
       style={style}
-      bgcolor={bgcolor}
+      bgColor={bgColor}
       padding={padding}
       radius={radius}
       width={width}

@@ -1,12 +1,8 @@
-export interface ButtonProps {
+import { BaseProps } from "../utils/baseProps.types";
+
+export interface ButtonProps extends Omit<BaseProps, "onClick"> {
   onClick: () => void;
   children: React.ReactNode;
-  height?: string;
-  width?: string;
-  padding?: string;
-  radius?: string;
-  color?: string;
-  bgColor?: string;
   hoverColor?: string;
   disabled?: boolean;
   loading?: boolean;

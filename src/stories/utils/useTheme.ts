@@ -1,13 +1,11 @@
 export const Theme = {
   primary: {
-    main: "",
-    background: "",
-    alternative: ""
+    light: "",
+    dark: ""
   },
   secondary: {
-    main: "",
-    background: "",
-    alternative: ""
+    light: "",
+    dark: ""
   },
   feedback: {
     success: "",

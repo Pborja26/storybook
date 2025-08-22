@@ -1,13 +1,9 @@
-export interface LabelStyleProps {
+import { BaseProps } from "../utils/baseProps.types";
+
+export interface LabelStyleProps extends Omit<BaseProps, "size" | "weight"> {
   size: number;
   weight: number;
-  color?: string;
   style?: React.CSSProperties;
-  bgcolor?: string;
-  padding?: string;
-  radius?: string;
-  width?: string;
-  height?: string;
 }
 
 export interface LabelProps extends LabelStyleProps {

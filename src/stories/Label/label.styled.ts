@@ -6,7 +6,7 @@ export const StyledLabel = styled.p<LabelStyleProps>`
   font-weight: ${(props) => props.weight};
   font-family: Arial, Helvetica, sans-serif;
   color: ${(props) => props.color || "#000"};
-  background-color: ${(props) => props.bgcolor || "transparent"};
+  background-color: ${(props) => props.bgColor || "transparent"};
   padding: ${(porps) => porps.padding || "0"};
   border-radius: ${(props) => props.radius};
   width: ${(props) => props.width || "fit-content"};

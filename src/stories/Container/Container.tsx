@@ -2,11 +2,11 @@ import { StyledContainer } from "./container.styled";
 import { ContainerProps } from "../types/typesIndex";
 
 const Container = ({
-  display,
+  display = "flex",
   direction,
   children,
-  height,
-  width,
+  height = "fit-content",
+  width = "fit-content",
   padding,
   radius,
   maxheight,
@@ -19,7 +19,8 @@ const Container = ({
   gap,
   align,
   justify,
-  onClick
+  onClick,
+  cursor
 }: ContainerProps) => {
   return (
     <StyledContainer
@@ -40,6 +41,7 @@ const Container = ({
       align={align}
       justify={justify}
       onClick={onClick}
+      cursor={cursor}
     >
       {children}
     </StyledContainer>
