@@ -1,5 +1,5 @@
 import { StyledContainer } from "./container.styled";
-import { ContainerProps } from "../types/typesIndex";
+import { ContainerProps } from "./container.types";
 
 const Container = ({
   display = "flex",
@@ -8,19 +8,19 @@ const Container = ({
   height = "fit-content",
   width = "fit-content",
   padding,
-  radius,
-  maxheight,
-  maxwidth,
-  bgcolor,
+  borderRadius,
+  maxHeight,
+  maxWidth,
+  backgroundColor,
   border,
-  style,
   overflowX,
   overflowY,
   gap,
-  align,
-  justify,
+  alignItems,
+  justifyContent,
+  cursor, 
   onClick,
-  cursor
+  ...props
 }: ContainerProps) => {
   return (
     <StyledContainer
@@ -29,19 +29,19 @@ const Container = ({
       height={height}
       width={width}
       padding={padding}
-      radius={radius}
-      maxheight={maxheight}
-      maxwidth={maxwidth}
-      bgcolor={bgcolor}
+      borderRadius={borderRadius}
+      maxHeight={maxHeight}
+      maxWidth={maxWidth}
+      backgroundColor={backgroundColor}
       border={border}
-      style={style}
       overflowX={overflowX}
       overflowY={overflowY}
       gap={gap}
-      align={align}
-      justify={justify}
+      alignItems={alignItems}
+      justifyContent={justifyContent}
       onClick={onClick}
       cursor={cursor}
+      style={{ ...props }}
     >
       {children}
     </StyledContainer>

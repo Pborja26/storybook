@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import Container from "./container";
+import Container from "./Container";
 
 const meta = {
   title: "Example/Container",
@@ -30,11 +30,11 @@ const meta = {
       control: "select",
       options: ["row", "column", "row-reverse", "column-reverse"]
     },
-    justify: {
+    justifyContent: {
       control: "select",
       options: ["flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]
     },
-    align: {
+    alignItems: {
       control: "select",
       options: ["flex-start", "flex-end", "center", "baseline", "stretch", "start", "end", "normal"]
     }
@@ -48,15 +48,14 @@ export const Default: Story = {
   args: {
     width: "20px",
     height: "20px",
-    maxheight: "",
-    maxwidth: "",
+    maxHeight: "",
+    maxWidth: "",
     display: "flex",
-    direction: "column",
-    radius: "8px",
+    flexDirection: "column",
+    borderRadius: "8px",
     padding: "1rem",
-    bgColor: "#acacacff",
+    backgroundColor: "#acacacff",
     border: "2px solid #000",
-    style: {},
     overflowX: "auto",
     overflowY: "auto",
     children: "",
