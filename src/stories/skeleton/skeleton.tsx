@@ -1,16 +1,12 @@
-import { StyledSkeleton } from "./skeleton.styled";
-import { SkeletonProps } from "../types/typesIndex";
+import { BaseStyleProps } from "../types/baseProps.types";
+import { StyledSkeleton } from "./skeleton.styles";
 
 const Skeleton = ({
-  width,
-  height,
-  radius
-}: SkeletonProps) => {
+  ...props
+}: BaseStyleProps) => {
   return (
     <StyledSkeleton
-      height={height}
-      width={width}
-      radius={radius}
+      style={{...props}}
     />
   )
 }

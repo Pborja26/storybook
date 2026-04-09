@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import Container from "./Container";
+import * as typeValues from "../utils/typeValues";
 
 const meta = {
   title: "Example/Container",
@@ -11,32 +12,32 @@ const meta = {
   argTypes: {
     cursor: {
       control: "select",
-      options: ["default", "pointer", "text", "help", "move", "not-allowed", "wait", "progress", "crosshair", "Grab", "Grabbing"],
+      options: typeValues.CursorValues,
       description: "CSS cursor values"
     },
     overflowX: {
       control: "select",
-      options: ["hidden", "visible", "clip", "scroll", "auto"]
+      options: typeValues.OverflowValues
     },
     overflowY: {
       control: "select",
-      options: ["hidden", "visible", "clip", "scroll", "auto"]
+      options: typeValues.OverflowValues
     },
     display: {
       control: "select",
-      options: ["block", "inline-block", "none", "flex", "inline-flex", "grid", "inline-grid", "contents", "table"]
+      options: typeValues.DisplayValues
     },
     direction: {
       control: "select",
-      options: ["row", "column", "row-reverse", "column-reverse"]
+      options: typeValues.DirectionValues
     },
     justifyContent: {
       control: "select",
-      options: ["flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]
+      options: typeValues.JustifyValues
     },
     alignItems: {
       control: "select",
-      options: ["flex-start", "flex-end", "center", "baseline", "stretch", "start", "end", "normal"]
+      options: typeValues.AlignValues
     }
   }
 } satisfies Meta<typeof Container>;
