@@ -47,7 +47,7 @@ export const Default: Story = {
     cursor: "pointer",
     children: "Button Content",
     onClick: () => {},
-    width: "50px",
-    height: "30px"
+    padding: "8px 10px",
+    borderRadius: 8
   }
 }
